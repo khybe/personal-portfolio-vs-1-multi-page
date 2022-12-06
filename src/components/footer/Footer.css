@@ -33,3 +33,7 @@ address p {
   font-style: italic;
   margin: 0.5rem 0;
 }
+
+address p span {
+  margin-right: 0.8rem;
+}
