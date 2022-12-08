@@ -1,0 +1,34 @@
+.my-work {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    -34deg,
+    #fff 0,
+    #fff 44%,
+    #e2dfdf 44%,
+    #e2dfdf 62%,
+    #fff 62%,
+    #fff 100%
+  );
+}
+
+.mb-up {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12vh;
+}
+
+.mb-up .title {
+  padding: 2rem 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.my-work .work-space-pic {
+  width: 150px;
+  height: 200px;
+}

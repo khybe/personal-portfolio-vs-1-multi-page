@@ -1,0 +1,42 @@
+.mb-down {
+  width: 80vw;
+  height: 50vh;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scrollbar styles */
+/* width */
+.mb-down ::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50%;
+}
+
+/* Handle */
+.mb-down ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+.mb-down ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.projects {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.mb-down .scroll-down {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
