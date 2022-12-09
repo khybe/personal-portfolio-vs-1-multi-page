@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
@@ -38,16 +39,40 @@ const Navbar = () => {
       )}
       <ul className={toggleStyles}>
         <li>
-          <a href="home">Home</a>
+          <NavLink
+            to="/home"
+            className={(navData) => (navData.isActive ? "active" : "")}
+            onClick={hideNavbarHandler}
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="about-me">About Me</a>
+          <NavLink
+            to="/about-me"
+            className={(navData) => (navData.isActive ? "active" : "")}
+            onClick={hideNavbarHandler}
+          >
+            About Me
+          </NavLink>
         </li>
         <li>
-          <a href="about-me">My Work</a>
+          <NavLink
+            to="/my-work"
+            className={(navData) => (navData.isActive ? "active" : "")}
+            onClick={hideNavbarHandler}
+          >
+            My Work
+          </NavLink>
         </li>
         <li>
-          <a href="contact-me">Contact Me</a>
+          <NavLink
+            to="/contact-me"
+            className={(navData) => (navData.isActive ? "active" : "")}
+            onClick={hideNavbarHandler}
+          >
+            Contact Me
+          </NavLink>
         </li>
       </ul>
     </nav>

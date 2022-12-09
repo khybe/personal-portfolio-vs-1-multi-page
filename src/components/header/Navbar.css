@@ -49,3 +49,7 @@
   text-decoration: none;
   color: inherit;
 }
+
+.active {
+  border-bottom: 2px solid #fff;
+}

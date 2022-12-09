@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactMe.css";
 
@@ -9,7 +9,19 @@ import { GoLocation } from "react-icons/go";
 
 // Abbreviations: {bg: background, msg: message, dt: desktop, mb: mobile, btm: bottom, cm: contact-me}
 const ContactMe = () => {
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
+
   const form = useRef();
+
+  const inputChangeHandler = (e) => {
+    e.preventDefault();
+
+    setUserName(e.target.event);
+    setUserEmail(e.target.event);
+    setUserMessage(e.target.event);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,9 +36,14 @@ const ContactMe = () => {
       .then(
         (result) => {
           console.log(result.text);
+
           alert(
             "Thank you for your message! \n I will get back to you as soon as possible."
           );
+
+          setUserName("");
+          setUserEmail("");
+          setUserMessage("");
         },
         (error) => {
           console.log(error.text);
@@ -49,6 +66,8 @@ const ContactMe = () => {
             type="text"
             id="user_name"
             name="user_name"
+            value={userName}
+            onChange={inputChangeHandler}
             required
             placeholder="Your name"
           />
@@ -57,13 +76,21 @@ const ContactMe = () => {
             type="email"
             id="user_email"
             name="user_email"
+            value={userEmail}
+            onChange={inputChangeHandler}
             required
             placeholder="Your email"
           />
         </div>
         <div className="user-msg">
           <label for="message">Message</label>
-          <textarea id="message" name="message" required />
+          <textarea
+            id="message"
+            name="message"
+            value={userMessage}
+            onChange={inputChangeHandler}
+            required
+          />
         </div>
         <button type="submit" value="Send">
           Submit
