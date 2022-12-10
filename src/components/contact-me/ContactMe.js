@@ -6,13 +6,14 @@ import contactMePic from "../../assets/contactMe.jpg";
 import { MdAlternateEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
+import { AiOutlineClose } from "react-icons/ai";
 
 // Abbreviations: {bg: background, msg: message, dt: desktop, mb: mobile, btm: bottom, cm: contact-me}
 const ContactMe = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
-
+  const [userRespond, setUserRespond] = useState(false);
   const form = useRef();
 
   const inputChangeHandler = (e) => {
@@ -36,10 +37,7 @@ const ContactMe = () => {
       .then(
         (result) => {
           console.log(result.text);
-
-          alert(
-            "Thank you for your message! \n I will get back to you as soon as possible."
-          );
+          setUserRespond(true);
 
           setUserName("");
           setUserEmail("");
@@ -50,6 +48,10 @@ const ContactMe = () => {
           console.log("Something went wrong, please try again.");
         }
       );
+  };
+
+  const closeUserRespondHandler = () => {
+    setUserRespond(false);
   };
 
   return (
@@ -113,6 +115,17 @@ const ContactMe = () => {
           </span>
         </p>
       </address>
+      {userRespond && (
+        <div className="userRespond">
+          <AiOutlineClose
+            size="3rem"
+            className="closeIcon"
+            onClick={closeUserRespondHandler}
+          />
+          <h1>Thank you for your message!</h1>
+          <p>I will get back to you as soon as possible.</p>
+        </div>
+      )}
     </section>
   );
 };
