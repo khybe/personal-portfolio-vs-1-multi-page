@@ -83,7 +83,7 @@ const ContactMe = () => {
           />
         </div>
         <div className="user-msg">
-          <label for="message">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"

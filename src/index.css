@@ -22,3 +22,27 @@ body {
   height: 100vh;
   background-color: #fff;
 }
+
+/* Use portrait styles for mobile devices in landscape mode */
+.use-portrait {
+  background-color: red;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.use-portrait h1 {
+  margin: 3rem 0;
+}
+
+@media (max-height: 415px) and (orientation: landscape) {
+  .App {
+    display: none;
+  }
+  .use-portrait {
+    display: block;
+  }
+}

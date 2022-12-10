@@ -23,9 +23,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <a href="#">
+        <NavLink to="/home" className={(navData) => navData.isActive && ""}>
           <img src={logo} alt="Logo" />
-        </a>
+        </NavLink>
       </div>
       {!showNavbar && (
         <div className="menu-icon">
