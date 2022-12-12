@@ -25,7 +25,7 @@ input:-webkit-autofill {
 }
 
 .contact-me .title {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   position: absolute;
   top: 11vh;
@@ -35,22 +35,22 @@ input:-webkit-autofill {
 .form {
   background-color: #28282b;
   width: 100vw;
-  height: 45vh;
-  padding: 2rem 0;
+  height: 42vh;
+  padding: 1rem 0;
   position: relative;
   top: 19vh;
   color: #fff;
-  border-radius: 25px;
+  border-radius: 12px;
 }
 
 form label {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
 form input,
 form textarea {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   background-color: transparent;
   color: #fff;
   outline: none;
@@ -60,7 +60,7 @@ form textarea {
 
 .user-info {
   width: 70%;
-  height: 24%;
+  height: 26%;
   margin-left: 5vw;
   display: flex;
   flex-direction: column;
@@ -95,11 +95,10 @@ form textarea {
 }
 
 form button {
-  width: 10rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 100;
   color: #fff;
-  padding: 0.3rem 2rem;
+  padding: 0.4rem 1.8rem;
   background-color: transparent;
   border: 1px solid rgb(197, 193, 193);
   position: absolute;
@@ -114,11 +113,11 @@ form button:hover {
 }
 
 .cm-mb-btm {
-  font-size: 2rem;
+  font-size: 1.6rem;
   width: 72%;
   height: 200px;
   position: absolute;
-  bottom: 2.5%;
+  bottom: -2%;
   left: 0;
   right: 0;
   margin: 0 auto;

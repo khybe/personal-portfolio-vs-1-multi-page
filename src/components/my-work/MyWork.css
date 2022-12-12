@@ -1,3 +1,5 @@
+/* ----Mobile-related-styles---- */
+/* Starting from the smallest, iphone 5/SE size: 320x568*/
 .my-work {
   width: 100vw;
   height: 100%;
@@ -24,11 +26,11 @@
 
 .mb-up .title {
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 300;
 }
 
 .my-work .work-space-pic {
-  width: 150px;
-  height: 200px;
+  width: 125px;
+  height: 180px;
 }

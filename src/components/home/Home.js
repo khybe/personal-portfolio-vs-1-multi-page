@@ -14,15 +14,13 @@ const Home = () => {
         <div className="diag-2"></div>
       </div>
       <div className="contents">
-        <div className="card">
-          <div className="card-bg"></div>
-          <div className="card-contents">
-            <h2 className="hello">
-              &#60; Hello,<span>I am</span> &#62;
-            </h2>
-            <h1>KHAIBAR SAADAT</h1>
-            <h2 className="detail">&#60; A front-end developer &#62;</h2>
-          </div>
+        <div className="card-bg"></div>
+        <div className="card-contents">
+          <h2 className="hello">
+            &#60; Hello,<span>I am</span> &#62;
+          </h2>
+          <h1>KHAIBAR SAADAT</h1>
+          <h2 className="detail">&#60; A front-end developer &#62;</h2>
         </div>
         <div className="links">
           <a href="">

@@ -7,7 +7,6 @@
   height: 8vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   z-index: 6;
@@ -15,12 +14,13 @@
 
 .logo img {
   width: 90px;
-  height: 50px;
+  height: 7.5vh;
+  margin: auto 0;
   margin-left: 2rem;
-  border-bottom: none;
 }
 
 .menu-icon {
+  margin: auto 0;
   margin-right: 2rem;
 }
 
