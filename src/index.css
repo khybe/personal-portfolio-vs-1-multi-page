@@ -25,13 +25,14 @@ body {
 
 /* Use portrait styles for mobile devices in landscape mode */
 .use-portrait {
-  background-color: red;
-  color: #fff;
+  background-color: #000;
+  color: red;
   width: 100vw;
   height: 100vh;
   padding-top: 100px;
   text-align: center;
   font-size: 2rem;
+  display: none;
 }
 
 .use-portrait h1 {

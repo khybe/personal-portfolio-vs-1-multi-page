@@ -36,8 +36,9 @@ const Home = () => {
       <div className="quote">
         <q>
           <em>
-            Programming isn't about what you know; it's about what you can
-            figure out.
+            <span></span>Programming isn't about what you know; it's about what
+            you can figure out.
+            <span></span>
           </em>
         </q>
         <p>-Chris Pine</p>

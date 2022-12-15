@@ -13,23 +13,23 @@
 .contents-ctr .title {
   font-size: 2.2rem;
   font-weight: 300;
-  top: 7.5vh;
+  top: 11vh;
   left: 12vw;
 }
 
 .bio-ctr {
   width: 100%;
-  top: 15vh;
+  top: 18vh;
 }
 
 .bio-bg,
 .bio {
   width: 100%;
-  height: 46.5vh;
+  height: 47vh;
 }
 
 .bio-bg {
-  background-color: rgba(52, 74, 4, 0.3);
+  background-color: rgba(14, 20, 2, 0.3);
   border: 1px solid #000;
   border-left: 0;
   padding: 1.5rem;
@@ -56,7 +56,7 @@
 
 .languages h4,
 .tools h4 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
   font-size: 1rem;
   font-weight: 100;
 }
@@ -68,16 +68,16 @@
 }
 
 .bio .languages {
-  top: 5%;
+  top: 6.5%;
 }
 
 .bio .tools {
-  top: 7.5%;
+  top: 9.5%;
 }
 
 .about-me .mb-bg {
   width: 100%;
-  height: 85vh;
+  height: 88vh;
 }
 
 .about-me .dt-bg {
