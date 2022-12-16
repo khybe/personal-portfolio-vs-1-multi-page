@@ -1,4 +1,4 @@
-/* ----Mobile-related-styles---- */
+/* ----Mobile-First---- */
 /* Starting from the smallest, iphone 5/SE size: 320x568*/
 .about-me * {
   position: absolute;
@@ -14,7 +14,7 @@
   font-size: 2.2rem;
   font-weight: 300;
   top: 11vh;
-  left: 12vw;
+  left: 10vw;
 }
 
 .bio-ctr {
@@ -26,23 +26,18 @@
 .bio {
   width: 100%;
   height: 47vh;
+  padding: 1.5rem;
 }
 
 .bio-bg {
-  background-color: rgba(14, 20, 2, 0.3);
-  border: 1px solid #000;
-  border-left: 0;
-  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
-  z-index: 2;
 }
 
 .bio {
   color: #fff;
-  margin: 1.5rem;
   font-size: 1.35rem;
   letter-spacing: 0.1rem;
-  z-index: 3;
 }
 
 .bio * {
@@ -63,7 +58,7 @@
 
 .languages span,
 .tools span {
-  margin: 0 0.8rem;
+  margin: 0 0.7rem;
   font-size: 0.9rem;
 }
 
@@ -82,4 +77,205 @@
 
 .about-me .dt-bg {
   display: none;
+}
+
+/*---Mobile-Media-Querie-Rules--- */
+/* For screen (width: 360px and more, height: 640px (in mind)*/
+@media screen and (min-width: 358px) {
+  .contents-ctr .title {
+    font-size: 2.4rem;
+    top: 12vh;
+  }
+
+  .bio-ctr {
+    top: 19vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 48.5vh;
+  }
+
+  .bio {
+    font-size: 1.6rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    padding-bottom: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1rem;
+  }
+
+  .about-me .mb-bg {
+    height: 90vh;
+  }
+}
+
+/* For screen (width: 360px and more, height: 760px*/
+@media screen and (min-width: 358px) and (min-height: 758px) {
+  .contents-ctr .title {
+    font-size: 2.8rem;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 47.5vh;
+  }
+
+  .bio {
+    font-size: 1.7rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1.2rem;
+  }
+
+  .bio .languages {
+    top: 8%;
+  }
+
+  .bio .tools {
+    top: 13%;
+  }
+
+  .about-me .mb-bg {
+    height: 92vh;
+  }
+}
+
+/* For screen (width: 360px and more, height: 780px*/
+@media screen and (min-width: 358px) and (min-height: 778px) {
+  .bio-bg,
+  .bio {
+    height: 48vh;
+  }
+
+  .bio {
+    font-size: 1.75rem;
+  }
+}
+
+/* For screen (width: 375px and more, height: 667px (in mind)*/
+@media screen and (min-width: 374px) {
+  .bio-bg,
+  .bio {
+    height: 46.5vh;
+  }
+
+  .bio {
+    font-size: 1.6rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1.2rem;
+  }
+
+  .about-me .mb-bg {
+    width: 102vw;
+  }
+}
+
+/* For screen (width: 375px and more, height: 812px*/
+@media screen and (min-width: 374px) and (min-height: 810px) {
+  .contents-ctr .title {
+    top: 12.5vh;
+  }
+
+  .bio-ctr {
+    top: 20vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 46vh;
+  }
+
+  .bio {
+    font-size: 1.8rem;
+  }
+
+  .bio .languages {
+    top: 10%;
+  }
+
+  .bio .tools {
+    top: 16%;
+  }
+}
+
+/* For screen (width: 414px and more, height: 736px (in mind)*/
+@media screen and (min-width: 412px) {
+  .contents-ctr .title {
+    font-size: 2.8rem;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 48vh;
+  }
+
+  .bio {
+    font-size: 1.8rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.5rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1.3rem;
+  }
+}
+
+/* For screen (width: 414px and more, height: 896px*/
+@media screen and (min-width: 412px) and (min-height: 894px) {
+  .contents-ctr .title {
+    font-size: 3rem;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 49.5vh;
+  }
+
+  .bio {
+    font-size: 2.08rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.6rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1.4rem;
+  }
+
+  .bio .languages {
+    top: 7%;
+  }
+
+  .bio .tools {
+    top: 12%;
+  }
 }

@@ -15,13 +15,12 @@
 .logo img {
   width: 90px;
   height: 7.5vh;
-  margin: auto 0;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .menu-icon {
   margin: auto 0;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .navbar ul {
