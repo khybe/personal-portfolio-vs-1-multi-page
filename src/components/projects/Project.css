@@ -1,3 +1,5 @@
+/* ----Mobile-First---- */
+/* Starting from the smallest, iphone 5/SE size: 320x568*/
 .project {
   width: 68%;
   height: 100%;
@@ -33,4 +35,50 @@
 
 .project a:hover {
   font-weight: 400;
+}
+
+/*---Mobile-Media-Querie-Rules--- */
+/* For screen (width: 360px and more, height: 640px (in mind)*/
+@media screen and (min-width: 358px) {
+  .project {
+    font-size: 1.8rem;
+  }
+}
+
+/* For screen (width: 360px and more, height: 760px*/
+@media screen and (min-width: 358px) and (min-height: 758px) {
+  .project {
+    font-size: 2rem;
+  }
+}
+
+/* For screen (width: 375px and more, height: 667px (in mind)*/
+@media screen and (min-width: 374px) {
+  .project {
+    width: 65%;
+  }
+}
+
+/* For screen (width: 375px and more, height: 812px*/
+@media screen and (min-width: 374px) and (min-height: 810px) {
+  .project {
+    width: 68%;
+    font-size: 2.2rem;
+  }
+
+  .project img {
+    height: 110px;
+  }
+}
+
+/* For screen (width: 414px and more, height: 736px (in mind)*/
+@media screen and (min-width: 412px) {
+  .project {
+    width: 65%;
+    font-size: 2.2rem;
+  }
+
+  .project img {
+    height: 110px;
+  }
 }
