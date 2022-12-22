@@ -1,7 +1,8 @@
-/* ----Mobile-related-styles---- */
+/* ----Mobile-First---- */
 .footer {
   background-color: #000;
-  border: 0.5px solid rgb(231, 230, 230);
+  border-top: 0.5px solid rgb(231, 230, 230);
+  border-bottom: 0.5px solid rgb(231, 230, 230);
   color: #fff;
   font-size: 1.2rem;
   width: 100vw;
@@ -35,4 +36,56 @@ address p {
 
 address p span {
   margin-right: 0.8rem;
+}
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more)*/
+@media screen and (min-width: 599px) {
+  .footer {
+    font-size: 1.4rem;
+  }
+}
+
+/* For screen (width: 800px and more)*/
+@media screen and (min-width: 798px) {
+  .footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 100vw;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  .footer-nav {
+    display: inline-block;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer a,
+  .footer p {
+    margin: 0.4rem 0;
+  }
+
+  address p {
+    font-style: italic;
+    margin: 0.5rem 0;
+  }
+
+  address p span {
+    margin-right: 0.8rem;
+  }
 }

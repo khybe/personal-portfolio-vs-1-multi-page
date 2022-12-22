@@ -28,14 +28,10 @@ const Navbar = () => {
         </NavLink>
       </div>
       {!showNavbar && (
-        <div className="menu-icon">
-          <CgMenuRight size="4rem" onClick={showNavbarHandler} />
-        </div>
+        <CgMenuRight onClick={showNavbarHandler} className="menu-icon" />
       )}
       {showNavbar && (
-        <div className="menu-icon">
-          <AiOutlineClose size="4rem" onClick={hideNavbarHandler} />
-        </div>
+        <AiOutlineClose onClick={hideNavbarHandler} className="menu-icon" />
       )}
       <ul className={toggleStyles}>
         <li>

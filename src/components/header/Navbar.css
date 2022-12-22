@@ -1,10 +1,12 @@
-/* ----Mobile-related-styles---- */
+/* ----Mobile-First---- */
 .navbar {
-  border: 0.5px solid rgb(231, 230, 230);
+  border-top: 0.5px solid rgb(231, 230, 230);
+  border-bottom: 0.5px solid rgb(231, 230, 230);
   background-color: #000;
   color: #fff;
   width: 100vw;
   height: 8vh;
+  max-height: 75px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -15,23 +17,26 @@
 .logo img {
   width: 90px;
   height: 7.5vh;
-  margin-left: 1rem;
+  max-height: 75px;
+  margin-left: 0.5rem;
 }
 
 .menu-icon {
   margin: auto 0;
   margin-right: 1rem;
+  font-size: 3.8rem;
 }
 
 .navbar ul {
   background-color: #000;
+  border-bottom: 0.5px solid rgb(231, 230, 230);
   width: 100vw;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 8vh;
+  top: 7.2vh;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
 }
@@ -51,5 +56,64 @@
 }
 
 .active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more)*/
+@media screen and (min-width: 599px) {
+  .logo img {
+    margin-left: 1.2rem;
+  }
+
+  .menu-icon {
+    margin-right: 1.5rem;
+    font-size: 5rem;
+  }
+
+  .navbar ul {
+    padding: 2.5rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/* For screen (width: 800px and more)*/
+@media screen and (min-width: 798px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar ul {
+    width: 64vw;
+    height: 7.8vh;
+    max-height: 75px;
+    border-left: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+  }
+
+  .hide-nav {
+    display: flex !important;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px (in mind)) */
+@media screen and (min-width: 798px) {
+  .navbar ul {
+    width: 72vw;
+    font-size: 2rem;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind) */
+@media screen and (min-width: 1364px) {
+  .navbar ul {
+    font-size: 2.4rem;
+  }
 }

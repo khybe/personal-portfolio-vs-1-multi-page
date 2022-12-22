@@ -22,7 +22,7 @@
   transform: rotate(18deg);
   top: -10vh;
   left: 10%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .k .diag-1 {
@@ -38,7 +38,7 @@
   transform: rotate(-50deg);
   bottom: -25%;
   left: 55%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .contents {
@@ -320,5 +320,644 @@
 
   .quote {
     bottom: 11vh;
+  }
+}
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more, height: 800px (in mind)*/
+@media screen and (min-width: 599px) {
+  .k * {
+    width: 11rem;
+  }
+
+  .k .vert-line {
+    left: 16%;
+  }
+
+  .k .diag-1 {
+    transform: rotate(52deg);
+    top: -14vh;
+    left: 65%;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-45deg);
+    bottom: -15%;
+  }
+
+  .contents {
+    top: 17vh;
+  }
+
+  .card-contents h2 {
+    font-size: 2.6rem;
+  }
+
+  .card-contents h1 {
+    font-size: 5.8rem;
+    padding: 0.5rem 12rem;
+  }
+
+  .contents .links {
+    top: 39vh;
+    font-size: 3rem;
+  }
+
+  .links a {
+    margin: 0 5rem;
+  }
+
+  .quote {
+    font-size: 2.4rem;
+    bottom: 14%;
+  }
+
+  .quote p {
+    margin-top: 0.2em;
+  }
+}
+
+/* For screen (width: 601px and more, height: 962px*/
+@media screen and (min-width: 600px) and (min-height: 960px) {
+  .k * {
+    width: 12.5rem;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-42deg);
+  }
+
+  .card-contents h2 {
+    font-size: 3rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.2rem;
+    padding: 1rem 12rem;
+  }
+
+  .contents .links {
+    top: 37vh;
+    left: 13%;
+    font-size: 3.4rem;
+  }
+
+  .links a {
+    margin: 0 4rem;
+  }
+
+  .quote {
+    font-size: 2.5rem;
+    bottom: 12%;
+  }
+}
+
+/* For screen (width: 768px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 766px) {
+  .k * {
+    width: 13.5rem;
+  }
+
+  .card-contents h2 {
+    font-size: 3.2rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.8rem;
+    padding: 0.9rem 15rem;
+  }
+
+  .contents .links {
+    top: 36.5vh;
+    font-size: 3.8rem;
+  }
+
+  .links a {
+    margin: 0 7rem;
+  }
+
+  .quote {
+    font-size: 2.8rem;
+    bottom: 10%;
+  }
+}
+
+/* For screen (width: 800px and more, height: 600px (in mind)*/
+@media screen and (min-width: 798px) {
+  .k {
+    width: 60%;
+  }
+
+  .k * {
+    width: 9rem;
+  }
+
+  .k .vert-line {
+    left: 5%;
+  }
+
+  .k .diag-1 {
+    top: -15vh;
+    left: 43%;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-42deg);
+    bottom: -5%;
+    left: 37%;
+  }
+
+  .contents {
+    top: 15vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 56vw;
+    height: 38vh;
+    right: 6vw;
+  }
+
+  .card-contents h2 {
+    font-size: 2.4rem;
+  }
+
+  .hello {
+    margin-left: -5.5rem;
+  }
+
+  .hello span {
+    margin-left: 1.8rem;
+  }
+
+  .card-contents h1 {
+    font-size: 4.2rem;
+    padding: 0 6rem;
+  }
+
+  .contents .links {
+    top: 44vh;
+    left: 42vw;
+    font-size: 2.6rem;
+  }
+
+  .links a {
+    margin: 0 4rem;
+  }
+
+  .quote {
+    width: 70%;
+    font-size: 2rem;
+    bottom: 16vh;
+    left: 18vw;
+  }
+
+  .quote p {
+    margin-top: 0;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px */
+@media screen and (min-width: 798px) and (min-height: 1278px) {
+  .k {
+    width: 100%;
+  }
+
+  .k * {
+    width: 13rem;
+  }
+
+  .k .vert-line {
+    left: 13%;
+  }
+
+  .k .diag-1 {
+    left: 66%;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-45deg);
+    bottom: -14%;
+    left: 52%;
+  }
+
+  .contents {
+    top: 21vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 84vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-height: 400px;
+    left: 8vw;
+    right: 8vw;
+  }
+
+  .card-contents h2 {
+    font-size: 2.8rem;
+  }
+
+  .hello {
+    margin-left: 0;
+  }
+
+  .hello span {
+    margin-left: 3.2rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.8rem;
+    padding: 3.2rem 18rem;
+  }
+
+  .contents .links {
+    top: 35vh;
+    left: 38%;
+    font-size: 3rem;
+  }
+
+  .quote {
+    width: 80%;
+    font-size: 2.8rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 9vh;
+  }
+
+  .quote p {
+    margin-top: 0.5em;
+  }
+}
+
+/* For screen (width: 810px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 808px) {
+  .k {
+    width: 100%;
+  }
+
+  .k * {
+    width: 12.5rem;
+  }
+
+  .k .vert-line {
+    left: 13.5%;
+  }
+
+  .k .diag-1 {
+    left: 66%;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-45deg);
+    bottom: -14%;
+    left: 52%;
+  }
+
+  .contents {
+    top: 19vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 86vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-height: 400px;
+    left: 7vw;
+    right: 7vw;
+  }
+
+  .card-contents h2 {
+    font-size: 2.8rem;
+  }
+
+  .hello {
+    margin-left: 0;
+  }
+
+  .hello span {
+    margin-left: 3.2rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.8rem;
+    padding: 2.8rem 18rem;
+  }
+
+  .contents .links {
+    top: 38vh;
+    left: 46.5%;
+    font-size: 3rem;
+  }
+
+  .links a {
+    margin: 0 3rem;
+  }
+
+  .quote {
+    width: 80%;
+    font-size: 2.8rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10vh;
+  }
+
+  .quote p {
+    margin-top: 0.5em;
+  }
+}
+
+/* For screen (width: 962px and more, height: 601px (in mind)*/
+@media screen and (min-width: 960px) {
+  .k {
+    width: 60%;
+  }
+
+  .k * {
+    width: 9rem;
+  }
+
+  .k .vert-line {
+    left: 5%;
+  }
+
+  .k .diag-1 {
+    left: 43%;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-42deg);
+    bottom: -5%;
+    left: 37%;
+  }
+
+  .contents {
+    top: 14vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 56vw;
+    height: 43vh;
+    left: 38vw;
+  }
+
+  .card-contents h2 {
+    font-size: 2.2rem;
+  }
+
+  .hello {
+    margin-left: -5.5rem;
+  }
+
+  .hello span {
+    margin-left: 1.8rem;
+  }
+
+  .card-contents h1 {
+    font-size: 4.2rem;
+    padding: 0 12rem;
+  }
+
+  .contents .links {
+    top: 46vh;
+    left: 45vw;
+    font-size: 2.6rem;
+  }
+
+  .links a {
+    margin: 0 6rem;
+  }
+
+  .quote {
+    width: 70%;
+    font-size: 2rem;
+    bottom: 16vh;
+    left: 18vw;
+  }
+
+  .quote p {
+    margin-top: 0;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 768px (in mind) */
+@media screen and (min-width: 1022px) {
+  .k * {
+    width: 10rem;
+  }
+
+  .contents {
+    top: 15vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    max-height: 300px;
+  }
+
+  .card-contents h2 {
+    font-size: 2.4rem;
+  }
+
+  .card-contents h1 {
+    font-size: 5.4rem;
+    padding: 0.4rem 12rem;
+  }
+
+  .contents .links {
+    top: 43vh;
+    left: 43vw;
+    font-size: 3rem;
+  }
+
+  .quote {
+    font-size: 2.4rem;
+    bottom: 13vh;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 1366px)*/
+@media screen and (min-width: 1022px) and (min-height: 1365px) {
+  .k {
+    width: 100%;
+  }
+
+  .k * {
+    width: 16rem;
+  }
+
+  .k .vert-line {
+    left: 13.5%;
+  }
+
+  .k .diag-1 {
+    left: 66%;
+  }
+
+  .k .diag-2 {
+    transform: rotate(-45deg);
+    bottom: -14%;
+    left: 52%;
+  }
+
+  .contents {
+    top: 20vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 84vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-height: 400px;
+    left: 8vw;
+    right: 8vw;
+  }
+
+  .card-contents h2 {
+    font-size: 3.4rem;
+  }
+
+  .hello {
+    margin-left: 0;
+  }
+
+  .hello span {
+    margin-left: 3.8rem;
+  }
+
+  .card-contents h1 {
+    font-size: 7rem;
+    padding: 2.4rem 18rem;
+  }
+
+  .contents .links {
+    top: 33vh;
+    left: 46.5%;
+    font-size: 3.8rem;
+  }
+
+  .links a {
+    margin: 0 3rem;
+  }
+
+  .quote {
+    width: 80%;
+    font-size: 3rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 9vh;
+  }
+
+  .quote p {
+    margin-top: 0.5em;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1278px) {
+  .k * {
+    width: 12rem;
+  }
+
+  .k .vert-line {
+    left: 7%;
+  }
+
+  .contents {
+    top: 16vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    max-height: 330px;
+  }
+
+  .card-contents h2 {
+    font-size: 3rem;
+  }
+
+  .hello {
+    margin-left: -10rem;
+  }
+
+  .hello span {
+    margin-left: 3.5rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.4rem;
+    padding: 0 12rem;
+  }
+
+  .contents .links {
+    top: 45vh;
+    left: 55vw;
+  }
+
+  .quote {
+    width: 60%;
+    font-size: 2.6rem;
+    bottom: 13vh;
+    left: 28vw;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .k * {
+    width: 15rem;
+  }
+
+  .k .diag-1 {
+    left: 48%;
+  }
+
+  .k .diag-2 {
+    bottom: -9%;
+    left: 44%;
+  }
+
+  .contents {
+    top: 20vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 56vw;
+    min-height: 350px;
+  }
+
+  .card-contents h2 {
+    font-size: 3.4rem;
+  }
+
+  .hello {
+    margin-left: -8rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.8rem;
+    padding: 0 15rem;
+  }
+
+  .contents .links {
+    top: 38vh;
+    font-size: 3.4rem;
+  }
+
+  .quote {
+    font-size: 3rem;
+    bottom: 11vh;
+    left: 24vw;
   }
 }
