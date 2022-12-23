@@ -7,7 +7,6 @@
 
 .contents-ctr {
   width: 84%;
-  z-index: 2;
 }
 
 .contents-ctr .title {
@@ -15,6 +14,7 @@
   font-weight: 300;
   top: 11vh;
   left: 10vw;
+  z-index: 2;
 }
 
 .bio-ctr {
@@ -27,6 +27,7 @@
   width: 100%;
   height: 47vh;
   padding: 1.5rem;
+  z-index: 2;
 }
 
 .bio-bg {
@@ -277,5 +278,539 @@
 
   .bio .tools {
     top: 12%;
+  }
+}
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more, height: 800px (in mind)*/
+@media screen and (min-width: 599px) {
+  .contents-ctr .title {
+    top: 13vh;
+  }
+
+  .bio-ctr {
+    top: 20vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 45vh;
+  }
+
+  .bio {
+    font-size: 2.2rem;
+  }
+
+  .bio .languages,
+  .bio .tools {
+    margin-left: 8vw;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.6rem;
+  }
+
+  .languages span,
+  .tools span {
+    margin: 0 1rem;
+    font-size: 1.4rem;
+  }
+
+  .bio .tools {
+    top: 14%;
+  }
+
+  .about-me .mb-bg {
+    height: 90vh;
+  }
+}
+
+/* For screen (width: 601px and more, height: 962px*/
+@media screen and (min-width: 600px) and (min-height: 960px) {
+  .contents-ctr {
+    width: 80%;
+  }
+
+  .contents-ctr .title {
+    font-size: 3rem;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 48vh;
+  }
+
+  .bio {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.7rem;
+  }
+
+  .bio .languages {
+    top: 7%;
+  }
+
+  .bio .tools {
+    top: 12%;
+  }
+
+  .about-me .mb-bg {
+    height: 92vh;
+  }
+}
+
+/* For screen (width: 768px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 766px) {
+  .contents-ctr {
+    width: 75%;
+  }
+
+  .contents-ctr .title {
+    font-size: 3.2rem;
+    top: 15vh;
+  }
+
+  .bio-ctr {
+    top: 22vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 44vh;
+  }
+
+  .bio {
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2rem;
+  }
+
+  .languages span,
+  .tools span {
+    margin: 0 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  .bio .languages {
+    top: 10%;
+  }
+
+  .bio .tools {
+    top: 17%;
+  }
+}
+
+/* For screen (width: 800px and more, height: 600px (in mind)*/
+@media screen and (min-width: 798px) {
+  .contents-ctr {
+    width: 65%;
+  }
+
+  .contents-ctr .title {
+    font-size: 2.6rem;
+    top: 12.5vh;
+    left: 6vw;
+  }
+
+  .bio-ctr {
+    top: 20vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 41.5vh;
+    left: 4vw;
+  }
+
+  .bio-bg {
+    background-color: rgb(190, 202, 164);
+  }
+
+  .bio {
+    color: #000;
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    z-index: 3;
+  }
+
+  .bio .languages,
+  .bio .tools {
+    margin-left: 6vw;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1.2rem;
+  }
+
+  .bio .tools {
+    top: 14%;
+  }
+
+  .about-me .mb-bg {
+    display: none;
+  }
+
+  .about-me .dt-bg {
+    display: inline-block;
+    width: 45vw;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px */
+@media screen and (min-width: 798px) and (min-height: 1278px) {
+  .contents-ctr {
+    width: 70vw;
+  }
+
+  .contents-ctr .title {
+    font-size: 3.6rem;
+    top: 13vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 48.5vh;
+    left: 12vw;
+    padding: 2.5rem;
+  }
+
+  .bio-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .bio {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 2rem;
+  }
+
+  .bio .languages {
+    top: 9%;
+  }
+
+  .bio .tools {
+    top: 16%;
+  }
+
+  .about-me .mb-bg {
+    width: 100%;
+    height: 95vh;
+    display: block;
+  }
+
+  .about-me .dt-bg {
+    display: none;
+  }
+}
+
+/* For screen (width: 810px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 808px) {
+  .contents-ctr {
+    width: 78vw;
+  }
+
+  .contents-ctr .title {
+    font-size: 3.6rem;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 48vh;
+    padding: 2.5rem;
+  }
+
+  .bio-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .bio {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 2rem;
+  }
+
+  .bio .languages {
+    top: 9%;
+  }
+
+  .bio .tools {
+    top: 15%;
+  }
+
+  .about-me .mb-bg {
+    width: 100%;
+    height: 95vh;
+    display: block;
+  }
+
+  .about-me .dt-bg {
+    display: none;
+  }
+}
+
+/* For screen (width: 962px and more, height: 601px (in mind)*/
+@media screen and (min-width: 960px) {
+  .contents-ctr {
+    width: 68%;
+  }
+
+  .contents-ctr .title {
+    font-size: 2.6rem;
+    top: 14vh;
+  }
+
+  .bio-ctr {
+    top: 21vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 37.2vh;
+    padding: 1.5rem;
+  }
+
+  .bio-bg {
+    background-color: rgb(190, 202, 164);
+  }
+
+  .bio {
+    color: #000;
+    font-size: 1.91rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 1.8rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 1.5rem;
+  }
+
+  .about-me .mb-bg {
+    display: none;
+  }
+
+  .about-me .dt-bg {
+    display: inline-block;
+    width: 42vw;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 768px (in mind) */
+@media screen and (min-width: 1022px) {
+  .contents-ctr .title {
+    font-size: 2.8rem;
+    top: 16vh;
+  }
+
+  .bio-ctr {
+    top: 24vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 37vh;
+    left: 1.5vw;
+  }
+
+  .bio {
+    font-size: 2.2rem;
+  }
+
+  .bio .languages,
+  .bio .tools {
+    margin-left: 8vw;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2rem;
+  }
+
+  .languages span,
+  .tools span {
+    margin: 0 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  .bio .languages {
+    top: 13%;
+  }
+
+  .bio .tools {
+    top: 22%;
+  }
+
+  .about-me .dt-bg {
+    width: 40vw;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 1366px)*/
+@media screen and (min-width: 1022px) and (min-height: 1365px) {
+  .contents-ctr {
+    width: 78vw;
+  }
+
+  .contents-ctr .title {
+    font-size: 4.6rem;
+    top: 14vh;
+  }
+
+  .bio-ctr {
+    top: 22vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 49vh;
+    padding: 2.5rem;
+    left: 5vw;
+  }
+
+  .bio-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .bio {
+    color: #fff;
+    font-size: 3.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.6rem;
+  }
+
+  .languages span,
+  .tools span {
+    margin: 0 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  .bio .languages {
+    top: 9%;
+  }
+
+  .bio .tools {
+    top: 15%;
+  }
+
+  .about-me .mb-bg {
+    display: block;
+  }
+
+  .about-me .dt-bg {
+    display: none;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1278px) {
+  .contents-ctr {
+    width: 65vw;
+  }
+
+  .contents-ctr .title {
+    font-size: 3rem;
+    top: 14vh;
+  }
+
+  .bio-ctr {
+    top: 22vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 41vh;
+    left: 4.5vw;
+  }
+
+  .bio {
+    font-size: 2.6rem;
+  }
+
+  .bio .languages {
+    top: 10%;
+  }
+
+  .bio .tools {
+    top: 16%;
+  }
+
+  .about-me .dt-bg {
+    width: 45vw;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .contents-ctr .title {
+    font-size: 3.2rem;
+    top: 16vh;
+  }
+
+  .bio-ctr {
+    top: 24vh;
+  }
+
+  .bio {
+    font-size: 3rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.8rem;
+  }
+
+  .languages span,
+  .tools span {
+    margin: 0 2rem;
+    font-size: 2.2rem;
+  }
+
+  .bio .tools {
+    top: 18%;
   }
 }
