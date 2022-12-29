@@ -17,14 +17,14 @@
   );
 }
 
-.mb-up {
+.vert-up {
   width: 90%;
   display: flex;
   justify-content: space-around;
   margin-top: 12vh;
 }
 
-.mb-up .title {
+.vert-up .title {
   padding: 2rem 0;
   font-size: 2.4rem;
   font-weight: 300;
@@ -38,12 +38,12 @@
 /*---Mobile-Media-Querie-Rules--- */
 /* For screen (width: 360px and more, height: 640px (in mind)*/
 @media screen and (min-width: 358px) {
-  .mb-up {
+  .vert-up {
     width: 78%;
     justify-content: space-between;
   }
 
-  .mb-up .title {
+  .vert-up .title {
     font-size: 2.6rem;
   }
 
@@ -54,11 +54,11 @@
 
 /* For screen (width: 360px and more, height: 760px*/
 @media screen and (min-width: 358px) and (min-height: 758px) {
-  .mb-up {
+  .vert-up {
     width: 80%;
   }
 
-  .mb-up .title {
+  .vert-up .title {
     font-size: 2.8rem;
   }
 
@@ -69,22 +69,22 @@
 
 /* For screen (width: 360px and more, height: 780px*/
 @media screen and (min-width: 358px) and (min-height: 778px) {
-  .mb-up {
+  .vert-up {
     width: 82%;
   }
 
-  .mb-up .title {
+  .vert-up .title {
     font-size: 3rem;
   }
 }
 
 /* For screen (width: 375px and more, height: 667px (in mind)*/
 @media screen and (min-width: 374px) {
-  .mb-up {
+  .vert-up {
     width: 80%;
   }
 
-  .mb-up .title {
+  .vert-up .title {
     font-size: 3rem;
   }
 
@@ -102,11 +102,11 @@
 
 /* For screen (width: 414px and more, height: 736px (in mind)*/
 @media screen and (min-width: 412px) {
-  .mb-up {
+  .vert-up {
     width: 78%;
   }
 
-  .mb-up .title {
+  .vert-up .title {
     font-size: 3.2rem;
   }
 
@@ -116,6 +116,255 @@
   }
 }
 
-/* For screen (width: 414px and more, height: 896px*/
-/* @media screen and (min-width: 412px) and (min-height: 894px) {
-} */
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more, height: 800px (in mind)*/
+@media screen and (min-width: 599px) {
+  .my-work {
+    background: linear-gradient(
+      -40deg,
+      #fff 0,
+      #fff 42%,
+      #e2dfdf 42%,
+      #e2dfdf 57%,
+      #fff 57%,
+      #fff 100%
+    );
+  }
+
+  .vert-up {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .vert-up .title {
+    padding: 3rem 0;
+    font-size: 3rem;
+  }
+}
+
+/* For screen (width: 601px and more, height: 962px*/
+@media screen and (min-width: 600px) and (min-height: 960px) {
+  .my-work {
+    background: linear-gradient(
+      -40deg,
+      #fff 0,
+      #fff 41%,
+      #e2dfdf 41%,
+      #e2dfdf 58%,
+      #fff 58%,
+      #fff 100%
+    );
+  }
+
+  .vert-up .title {
+    font-size: 3.2rem;
+  }
+}
+
+/* For screen (width: 768px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 766px) {
+  .vert-up {
+    width: 80%;
+    margin-right: 10vw;
+  }
+
+  .my-work .work-space-pic {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+/* For screen (width: 800px and more, height: 600px (in mind)*/
+@media screen and (min-width: 798px) {
+  .my-work {
+    flex-direction: row;
+    background: linear-gradient(
+      -30deg,
+      #fff 0,
+      #fff 45%,
+      #e2dfdf 45%,
+      #e2dfdf 61%,
+      #fff 61%,
+      #fff 100%
+    );
+  }
+
+  .horiz-left {
+    width: 31vw;
+    flex-direction: column-reverse;
+    margin: 0 5vw;
+    margin-top: 4vh;
+  }
+
+  .horiz-left .title {
+    padding: 1.5rem 0;
+    text-align: right;
+    margin-right: -8vw;
+    font-size: 2.8rem;
+  }
+
+  .my-work .work-space-pic {
+    width: 31vw;
+    max-width: 250px;
+    height: 60vh;
+    max-height: 350px;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px */
+@media screen and (min-width: 798px) and (min-height: 1278px) {
+  .my-work {
+    flex-direction: column;
+    background: linear-gradient(
+      -46deg,
+      #fff 0,
+      #fff 44%,
+      #e2dfdf 44%,
+      #e2dfdf 62%,
+      #fff 62%,
+      #fff 100%
+    );
+  }
+
+  .vert-up {
+    width: 65%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12vh;
+    margin-right: 12vw;
+  }
+
+  .vert-up .title {
+    font-size: 3.6rem;
+    margin-top: 2vh;
+    margin-right: 0;
+  }
+}
+
+/* For screen (width: 810px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 808px) {
+  .my-work {
+    flex-direction: column;
+    background: linear-gradient(
+      -38deg,
+      #fff 0,
+      #fff 38%,
+      #e2dfdf 38%,
+      #e2dfdf 56%,
+      #fff 56%,
+      #fff 100%
+    );
+  }
+
+  .vert-up {
+    width: 68%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12vh;
+    margin-right: 10vw;
+  }
+
+  .vert-up .title {
+    font-size: 3.6rem;
+    margin-top: 4vh;
+    margin-right: 0;
+  }
+}
+
+/* For screen (width: 962px and more, height: 601px (in mind)*/
+@media screen and (min-width: 960px) {
+  .my-work {
+    flex-direction: row;
+    background: linear-gradient(
+      -30deg,
+      #fff 0,
+      #fff 45%,
+      #e2dfdf 45%,
+      #e2dfdf 61%,
+      #fff 61%,
+      #fff 100%
+    );
+  }
+
+  .horiz-left {
+    width: 31vw;
+    flex-direction: column-reverse;
+    margin: 0 5vw;
+  }
+
+  .horiz-left .title {
+    margin-right: -6vw;
+    font-size: 2.8rem;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 768px (in mind) */
+@media screen and (min-width: 1022px) {
+  .horiz-left .title {
+    font-size: 3rem;
+    padding: 2.5rem 0;
+  }
+
+  .my-work .work-space-pic {
+    max-width: 280px;
+    max-height: 420px;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 1366px)*/
+@media screen and (min-width: 1022px) and (min-height: 1365px) {
+  .my-work {
+    flex-direction: column;
+    background: linear-gradient(
+      -40deg,
+      #fff 0,
+      #fff 38%,
+      #e2dfdf 38%,
+      #e2dfdf 56%,
+      #fff 56%,
+      #fff 100%
+    );
+  }
+
+  .vert-up {
+    width: 68%;
+    flex-direction: row;
+    margin-top: 12vh;
+    margin-right: 10vw;
+  }
+
+  .vert-up .title {
+    font-size: 4.5rem;
+    margin-right: 0;
+  }
+
+  .my-work .work-space-pic {
+    max-width: 320px;
+    max-height: 450px;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1278px) {
+  .horiz-left .title {
+    margin-right: -5rem;
+  }
+
+  .my-work .work-space-pic {
+    max-width: 325px;
+    max-height: 480px;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .horiz-left .title {
+    margin-right: -6vw;
+    font-size: 4rem;
+  }
+
+  .my-work .work-space-pic {
+    max-width: 400px;
+    max-height: 600px;
+  }
+}

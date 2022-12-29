@@ -11,16 +11,16 @@ import { AiOutlineDown } from "react-icons/ai";
 
 const projectsList = [
   {
-    id: "p1",
-    name: "Pig Game",
-    image: pigGame,
-    githubLink: "https://github.com/khybe/pig-game",
-  },
-  {
     id: "p2",
     name: "Guess My Number",
     image: guessMyNumber,
     githubLink: "https://github.com/khybe/guess-my-number",
+  },
+  {
+    id: "p1",
+    name: "Pig Game",
+    image: pigGame,
+    githubLink: "https://github.com/khybe/pig-game",
   },
   {
     id: "p3",
@@ -33,10 +33,10 @@ const projectsList = [
   { id: "p6", name: "Coming Soon", image: comingSoon, githubLink: "" },
 ];
 
-// Abbreviations: {dt: desktop, mb: mobile}
+// Abbreviations: {horiz: horizontal, vert: vertical}
 const Projects = () => {
   return (
-    <div className="dt-right mb-down">
+    <div className="horiz-right vert-down">
       <div className="projects">
         {projectsList.map((project) => (
           <Project

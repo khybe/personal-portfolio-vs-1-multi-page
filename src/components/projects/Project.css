@@ -82,3 +82,88 @@
     height: 110px;
   }
 }
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more, height: 800px (in mind)*/
+@media screen and (min-width: 599px) {
+  .project {
+    width: 50%;
+    font-size: 1.8rem;
+  }
+
+  .project img {
+    height: 105px;
+  }
+}
+
+/* For screen (width: 768px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 766px) {
+  .project {
+    width: 65%;
+    margin-bottom: 3.2rem;
+  }
+
+  .project figcaption {
+    padding: 0.4rem 0;
+  }
+}
+
+/* For screen (width: 800px and more, height: 600px (in mind)*/
+@media screen and (min-width: 798px) {
+  .project {
+    width: 85%;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px */
+@media screen and (min-width: 798px) and (min-height: 1278px) {
+  .project {
+    width: 68%;
+  }
+
+  .project img {
+    height: 120px;
+  }
+}
+
+/* For screen (width: 810px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 808px) {
+  .project {
+    width: 75%;
+  }
+
+  .project img {
+    height: 120px;
+  }
+}
+
+/* For screen (width: 962px and more, height: 601px (in mind)*/
+@media screen and (min-width: 960px) {
+  .project {
+    width: 80%;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 1366px)*/
+@media screen and (min-width: 1022px) and (min-height: 1365px) {
+  .project {
+    width: 75%;
+    font-size: 2.4rem;
+    margin-bottom: 3.8rem;
+  }
+
+  .project img {
+    height: 150px;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1278px) {
+  .project {
+    font-size: 2.2rem;
+  }
+
+  .project img {
+    height: 160px;
+  }
+}

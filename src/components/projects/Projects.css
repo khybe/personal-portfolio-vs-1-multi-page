@@ -1,6 +1,6 @@
 /* ----Mobile-First---- */
 /* Starting from the smallest, iphone 5/SE size: 320x568*/
-.mb-down {
+.vert-down {
   width: 75vw;
   height: 47vh;
   display: flex;
@@ -11,19 +11,19 @@
 
 /* Scrollbar styles */
 /* width */
-.mb-down ::-webkit-scrollbar {
+.vert-down ::-webkit-scrollbar {
   width: 10px;
   border-radius: 50%;
 }
 
 /* Handle */
-.mb-down ::-webkit-scrollbar-thumb {
+.vert-down ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 25px;
 }
 
 /* Handle on hover */
-.mb-down ::-webkit-scrollbar-thumb:hover {
+.vert-down ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -35,7 +35,7 @@
   overflow-y: scroll;
 }
 
-.mb-down .scroll-down {
+.vert-down .scroll-down {
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
@@ -44,7 +44,7 @@
 /*---Mobile-Media-Querie-Rules--- */
 /* For screen (width: 360px and more, height: 640px (in mind)*/
 @media screen and (min-width: 358px) {
-  .mb-down .scroll-down {
+  .vert-down .scroll-down {
     margin-top: 1.5rem;
     font-size: 1.4rem;
   }
@@ -56,7 +56,7 @@
 
 /* For screen (width: 360px and more, height: 760px*/
 @media screen and (min-width: 358px) and (min-height: 758px) {
-  .mb-down {
+  .vert-down {
     height: 55vh;
   }
 
@@ -64,21 +64,21 @@
     height: 75%;
   }
 
-  .mb-down .scroll-down {
+  .vert-down .scroll-down {
     font-size: 1.6rem;
   }
 }
 
 /* For screen (width: 360px and more, height: 780px*/
 @media screen and (min-width: 358px) and (min-height: 778px) {
-  .mb-down .scroll-down {
+  .vert-down .scroll-down {
     font-size: 1.7rem;
   }
 }
 
 /* For screen (width: 375px and more, height: 667px (in mind)*/
 @media screen and (min-width: 374px) {
-  .mb-down {
+  .vert-down {
     height: 52vh;
   }
 
@@ -86,7 +86,7 @@
     height: 67%;
   }
 
-  .mb-down .scroll-down {
+  .vert-down .scroll-down {
     font-size: 1.6rem;
   }
 
@@ -97,7 +97,7 @@
 
 /* For screen (width: 375px and more, height: 812px*/
 @media screen and (min-width: 374px) and (min-height: 810px) {
-  .mb-down {
+  .vert-down {
     height: 56vh;
   }
 
@@ -105,7 +105,7 @@
     height: 72%;
   }
 
-  .mb-down .scroll-down {
+  .vert-down .scroll-down {
     font-size: 1.8rem;
   }
 
@@ -116,18 +116,146 @@
 
 /* For screen (width: 414px and more, height: 736px (in mind)*/
 @media screen and (min-width: 412px) {
-  .mb-down {
+  .vert-down {
     height: 54vh;
   }
 }
 
 /* For screen (width: 414px and more, height: 896px*/
 @media screen and (min-width: 412px) and (min-height: 894px) {
-  .mb-down {
+  .vert-down {
     height: 58vh;
   }
 
   .projects {
     height: 70%;
+  }
+}
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more, height: 800px (in mind)*/
+@media screen and (min-width: 599px) {
+  .vert-down {
+    width: 70vw;
+    height: 56vh;
+  }
+}
+
+/* For screen (width: 601px and more, height: 962px*/
+@media screen and (min-width: 600px) and (min-height: 960px) {
+  .vert-down {
+    height: 63vh;
+  }
+}
+
+/* For screen (width: 768px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 766px) {
+  .vert-down {
+    width: 80vw;
+    height: 61vh;
+  }
+
+  .projects {
+    height: 64%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For screen (width: 800px and more, height: 600px (in mind)*/
+@media screen and (min-width: 798px) {
+  .horiz-right {
+    width: 60vw;
+    height: 68vh;
+    margin-top: 18vw;
+    margin-right: 5vw;
+  }
+
+  .projects {
+    height: 65%;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px */
+@media screen and (min-width: 798px) and (min-height: 1278px) {
+  .vert-down {
+    width: 82vw;
+    height: 60vh;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .projects {
+    height: 68%;
+  }
+}
+
+/* For screen (width: 810px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 808px) {
+  .vert-down {
+    width: 80vw;
+    height: 50vh;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .projects {
+    height: 75%;
+  }
+}
+
+/* For screen (width: 962px and more, height: 601px (in mind)*/
+@media screen and (min-width: 960px) {
+  .horiz-right {
+    height: 68vh;
+    margin-top: 15vw;
+    margin-right: 5vw;
+  }
+
+  .projects {
+    height: 65%;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 768px (in mind) */
+@media screen and (min-width: 1022px) {
+  .horiz-right {
+    margin-top: 25vh;
+  }
+
+  .projects {
+    height: 70%;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 1366px)*/
+@media screen and (min-width: 1022px) and (min-height: 1365px) {
+  .vert-down {
+    height: 50vh;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .projects {
+    height: 79%;
+  }
+
+  .vert-down .scroll-down {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1278px) {
+  .vert-down .scroll-down {
+    font-size: 2rem;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .projects {
+    height: 80%;
   }
 }
