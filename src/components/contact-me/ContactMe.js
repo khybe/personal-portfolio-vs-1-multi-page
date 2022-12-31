@@ -2,13 +2,14 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactMe.css";
 
-import contactMePic from "../../assets/contactMe.jpg";
+import cmHorizBg from "../../assets/cmHorizBg.jpg";
+import cmVertBg from "../../assets/cmVertBg.jpg";
 import { MdAlternateEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { AiOutlineClose } from "react-icons/ai";
 
-// Abbreviations: {bg: background, msg: message, dt: desktop, mb: mobile, btm: bottom, cm: contact-me}
+// Abbreviations: {bg: background, msg: message, btm: bottom, horiz: horizontal, vert: vertical, cm: contact-me}
 const ContactMe = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
@@ -57,9 +58,14 @@ const ContactMe = () => {
   return (
     <section className="contact-me">
       <img
-        className="bg"
-        src={contactMePic}
-        alt="Left side background for contact me section"
+        className="horiz-bg"
+        src={cmHorizBg}
+        alt="Background for bigger devices in landscape mode"
+      />
+      <img
+        className="vert-bg"
+        src={cmVertBg}
+        alt="Background for devices in portrait mode"
       />
       <h2 className="title">Contact Me</h2>
       <form ref={form} onSubmit={sendEmail} className="form">
@@ -99,7 +105,7 @@ const ContactMe = () => {
         </button>
       </form>
 
-      <address className="cm-dt-right cm-mb-btm">
+      <address className="cm-horiz-right cm-vert-btm">
         <a href="mailto:khybersaadat93@gmail.com">
           <MdAlternateEmail />
           <span>khybersaadat93@gmail</span>

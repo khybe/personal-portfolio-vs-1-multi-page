@@ -41,7 +41,8 @@ input::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-.contact-me .bg {
+.contact-me .horiz-bg,
+.contact-me .vert-bg {
   display: none;
 }
 
@@ -66,7 +67,7 @@ input::-webkit-scrollbar-thumb:hover {
 }
 
 form label {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 100;
 }
 
@@ -118,7 +119,7 @@ form textarea {
 }
 
 form button {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 100;
   color: #fff;
   padding: 0.2rem 1.8rem;
@@ -136,7 +137,7 @@ form button:hover {
   border: 1px solid #000;
 }
 
-.cm-mb-btm {
+.cm-vert-btm {
   font-size: 1.6rem;
   width: 72%;
   height: 200px;
@@ -145,12 +146,12 @@ form button:hover {
   right: 0;
 }
 
-.cm-mb-btm span {
+.cm-vert-btm span {
   margin-left: 1rem;
 }
 
-.cm-mb-btm a,
-.cm-mb-btm p {
+.cm-vert-btm a,
+.cm-vert-btm p {
   display: block;
   text-decoration: none;
   color: #000;
@@ -172,6 +173,7 @@ form button:hover {
   position: absolute;
   top: 4%;
   right: 8%;
+  cursor: pointer;
 }
 
 .userRespond h1 {
@@ -197,7 +199,7 @@ form button:hover {
   }
 
   form label {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   form input,
@@ -214,6 +216,7 @@ form button:hover {
   }
 
   .user-msg textarea {
+    margin: 0.5rem 0;
     line-height: 2.5ch;
     background-image: linear-gradient(
       transparent,
@@ -224,17 +227,17 @@ form button:hover {
   }
 
   form button {
-    font-size: 1.8rem;
-    bottom: 7%;
+    font-size: 1.6rem;
+    bottom: 5%;
   }
 
-  .cm-mb-btm {
+  .cm-vert-btm {
     font-size: 1.8rem;
     width: 68%;
     bottom: -2%;
   }
 
-  .cm-mb-btm span {
+  .cm-vert-btm span {
     margin-left: 0.8rem;
   }
 }
@@ -247,12 +250,11 @@ form button:hover {
   }
 
   .form {
-    height: 46vh;
     top: 21vh;
   }
 
   form label {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   form input,
@@ -269,19 +271,17 @@ form button:hover {
   }
 
   form button {
-    font-size: 1.9rem;
-    bottom: 5%;
+    font-size: 1.8rem;
   }
 
-  .cm-mb-btm {
-    font-size: 2rem;
+  .cm-vert-btm {
     bottom: 1%;
   }
 }
 
 /* For screen (width: 360px and more, height: 780px*/
 @media screen and (min-width: 358px) and (min-height: 778px) {
-  .cm-mb-btm {
+  .cm-vert-btm {
     bottom: 1.5%;
   }
 
@@ -303,7 +303,7 @@ form button:hover {
   }
 
   form label {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   form input,
@@ -311,11 +311,7 @@ form button:hover {
     font-size: 2.3rem;
   }
 
-  form button {
-    bottom: 5%;
-  }
-
-  .cm-mb-btm {
+  .cm-vert-btm {
     font-size: 2rem;
     bottom: -0.5%;
   }
@@ -356,7 +352,7 @@ form button:hover {
     bottom: 4%;
   }
 
-  .cm-mb-btm {
+  .cm-vert-btm {
     font-size: 2.1rem;
     bottom: 1%;
     right: 4%;
@@ -379,6 +375,7 @@ form button:hover {
 /* For screen (width: 414px and more, height: 736px (in mind)*/
 @media screen and (min-width: 412px) {
   .user-msg textarea {
+    margin: 1rem 0;
     line-height: 2.75ch;
     background-image: linear-gradient(
       transparent,
@@ -388,10 +385,8 @@ form button:hover {
     background-size: 100% 2.75ch;
   }
 
-  .cm-mb-btm {
-    font-size: 2.2rem;
+  .cm-vert-btm {
     bottom: 1.5%;
-    right: 3%;
   }
 }
 
@@ -399,10 +394,6 @@ form button:hover {
 @media screen and (min-width: 412px) and (min-height: 894px) {
   .form {
     height: 46vh;
-  }
-
-  .user-info {
-    height: 25%;
   }
 
   .user-info input:first-of-type {
@@ -415,6 +406,359 @@ form button:hover {
 
   .user-msg textarea {
     height: 85%;
+    line-height: 2.6ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.6ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.6ch;
+  }
+
+  .cm-vert-btm {
+    bottom: 5%;
+  }
+
+  .cm-vert-btm a,
+  .cm-vert-btm p {
+    padding: 0.8rem 0;
+  }
+
+  .userRespond p {
+    font-size: 2.6rem;
+  }
+}
+
+/*---Tablet-Media-Querie-Rules--- */
+/* For screen (width: 600px and more, height: 800px (in mind)*/
+@media screen and (min-width: 599px) {
+  .cm-vert-btm {
+    width: 50vw;
+    bottom: 3%;
+  }
+}
+
+/* For screen (width: 601px and more, height: 962px*/
+@media screen and (min-width: 600px) and (min-height: 960px) {
+  .form {
+    width: 90vw;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.4rem;
+  }
+
+  .user-info {
+    height: 24%;
+  }
+
+  .user-msg {
+    margin: 3rem auto;
+  }
+
+  .user-msg textarea {
+    height: 80%;
+    line-height: 2.7ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.7ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.7ch;
+  }
+
+  .cm-vert-btm {
+    width: 50vw;
+    bottom: 6%;
+  }
+}
+
+/* For screen (width: 768px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 766px) {
+  form input,
+  form textarea {
+    font-size: 2.6rem;
+  }
+
+  .user-msg textarea {
+    margin: 1.5rem 0;
+  }
+
+  .cm-vert-btm {
+    font-size: 2.2rem;
+    width: 40vw;
+    bottom: 7%;
+  }
+}
+
+/* For screen (width: 800px and more, height: 600px (in mind)*/
+@media screen and (min-width: 798px) {
+  .contact-me .title {
+    font-size: 3rem;
+  }
+
+  .form {
+    width: 85vw;
+  }
+
+  .form label {
+    font-size: 2.2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2rem;
+  }
+
+  .user-info {
+    width: 45vw;
+    margin-left: 6vw;
+  }
+
+  .user-msg {
+    margin: 1rem auto;
+  }
+
+  .cm-vert-btm {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    bottom: 16vh;
+  }
+
+  .cm-vert-btm a,
+  .cm-vert-btm p {
+    margin: 1.8rem;
+  }
+}
+
+/* For screen (width: 800px and more, height: 1280px */
+@media screen and (min-width: 798px) and (min-height: 1278px) {
+  .contact-me .title {
+    font-size: 3.2rem;
+    top: 11vh;
+  }
+
+  .form {
+    height: 35vh;
+    top: 16vh;
+  }
+
+  .form label {
+    font-size: 2.8rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.4rem;
+  }
+
+  .user-info input:first-of-type {
+    margin-top: 2rem;
+  }
+
+  .user-msg {
+    margin: 2.5rem auto;
+  }
+
+  .cm-vert-btm {
+    width: 80vw;
+    flex-wrap: wrap;
+    font-size: 2.4rem;
+    margin-bottom: 7rem;
+    right: 10vw;
+  }
+
+  .cm-vert-btm a,
+  .cm-vert-btm p {
+    margin: 1rem 3rem;
+  }
+
+  .vert-bg {
+    width: 100vw;
+    height: 30vh;
+    display: block !important;
+    position: absolute;
+    bottom: 4vh;
+  }
+
+  .userRespond {
+    padding-top: 25vh;
+  }
+
+  .userRespond h1 {
+    font-size: 4rem;
+  }
+
+  .userRespond p {
+    font-size: 3.5rem;
+  }
+}
+
+/* For screen (width: 810px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 808px) {
+  .contact-me .title {
+    font-size: 3.2rem;
+    top: 11vh;
+  }
+
+  .form {
+    height: 36.5vh;
+    top: 16vh;
+  }
+
+  .form label {
+    font-size: 2.8rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.4rem;
+  }
+
+  .user-info input:first-of-type {
+    margin-top: 1.5rem;
+  }
+
+  .user-msg {
+    margin: 2.5rem auto;
+  }
+
+  .user-msg textarea {
+    line-height: 2.8ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.8ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.8ch;
+  }
+
+  .cm-vert-btm {
+    width: 90vw;
+    flex-wrap: wrap;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    right: 5vw;
+  }
+
+  .cm-vert-btm a,
+  .cm-vert-btm p {
+    margin: 1rem 5rem;
+  }
+
+  .vert-bg {
+    width: 100vw;
+    height: 30vh;
+    display: block !important;
+    position: absolute;
+    bottom: 3vh;
+  }
+
+  .userRespond {
+    padding-top: 25vh;
+  }
+
+  .userRespond h1 {
+    font-size: 4rem;
+  }
+
+  .userRespond p {
+    font-size: 3.5rem;
+  }
+}
+
+/* For screen (width: 962px and more, height: 601px (in mind)*/
+@media screen and (min-width: 960px) {
+  .contact-me .title {
+    font-size: 3rem;
+    top: 12.5vh;
+    left: 3vw;
+  }
+
+  .form {
+    width: 55vw;
+    height: 50vh;
+    right: 20vw;
+    top: 22vh;
+  }
+
+  .form label {
+    font-size: 2.2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2rem;
+  }
+
+  .user-info {
+    width: 60%;
+    margin-left: 4vw;
+  }
+
+  .user-info input:first-of-type {
+    margin-top: 1rem;
+  }
+
+  .user-msg {
+    margin: 1.5rem auto;
+  }
+
+  .cm-vert-btm {
+    width: 35vw;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    bottom: 16vh;
+    right: 10vw;
+  }
+
+  .vert-bg {
+    display: none !important;
+  }
+
+  .horiz-bg {
+    display: block !important;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 768px (in mind) */
+@media screen and (min-width: 1022px) {
+  .contact-me .title {
+    font-size: 3.2rem;
+    top: 14vh;
+  }
+
+  .form {
+    height: 52vh;
+  }
+
+  .form label {
+    font-size: 2.6rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.2rem;
+  }
+
+  .user-info input:first-of-type {
+    margin-top: 2rem;
+  }
+
+  .user-msg {
+    margin: 2rem auto;
+  }
+
+  .user-msg textarea {
     line-height: 3ch;
     background-image: linear-gradient(
       transparent,
@@ -424,16 +768,134 @@ form button:hover {
     background-size: 100% 3ch;
   }
 
-  .cm-mb-btm {
-    bottom: 6%;
+  .cm-vert-btm {
+    width: 35vw;
+    font-size: 2rem;
+    bottom: 20vh;
   }
 
-  .cm-mb-btm a,
-  .cm-mb-btm p {
-    padding: 0.8rem 0;
+  .horiz-bg {
+    height: 100vh;
+  }
+}
+
+/* For screen (width: 1024px and more, height: 1366px)*/
+@media screen and (min-width: 1022px) and (min-height: 1365px) {
+  .contact-me .title {
+    font-size: 3.6rem;
+    top: 11vh;
+    left: 10vw;
   }
 
-  .userRespond p {
-    font-size: 2.6rem;
+  .form {
+    width: 80vw;
+    height: 36.5vh;
+    top: 16vh;
+    left: 0;
+  }
+
+  .form label {
+    font-size: 2.8rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.4rem;
+  }
+
+  .user-info input:first-of-type {
+    margin-top: 2.5rem;
+  }
+
+  .user-msg {
+    margin: 2.5rem auto;
+  }
+
+  .user-msg textarea {
+    line-height: 2.6ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.6ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.6ch;
+  }
+
+  .cm-vert-btm {
+    width: 80vw;
+    flex-direction: row;
+    font-size: 2.8rem;
+    margin-bottom: 18rem;
+  }
+
+  .horiz-bg {
+    display: none !important;
+  }
+
+  .vert-bg {
+    width: 100vw;
+    height: 30vh;
+    display: block !important;
+    position: absolute;
+    bottom: 3vh;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1278px) {
+  .user-msg textarea {
+    line-height: 2.6ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.6ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.6ch;
+  }
+
+  .cm-vert-btm {
+    font-size: 2.4rem;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .contact-me .title {
+    font-size: 3.8rem;
+  }
+
+  .form {
+    height: 46vh;
+  }
+
+  .form label {
+    font-size: 3rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.4rem;
+  }
+
+  .user-info input:first-of-type {
+    margin-top: 2.8rem;
+  }
+
+  .user-msg {
+    margin: 3rem auto;
+  }
+
+  .user-msg textarea {
+    line-height: 2.8ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.8ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.8ch;
+  }
+
+  .cm-vert-btm {
+    right: 9vw;
   }
 }
