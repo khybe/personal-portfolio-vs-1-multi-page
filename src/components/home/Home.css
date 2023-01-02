@@ -912,8 +912,12 @@
   }
 }
 
-/* For screen (width: 1366px and more, height: 1024px (in mind)*/
-@media screen and (min-width: 1364px) {
+/* For screen (width: 1366px and more, height: 768px (in mind)*/
+/* @media screen and (min-width: 1364px) {
+} */
+
+/* For screen (width: 1366px and more, height: 1024px*/
+@media screen and (min-width: 1364px) and (min-height: 1022px) {
   .k * {
     width: 15rem;
   }
@@ -959,5 +963,170 @@
     font-size: 3rem;
     bottom: 11vh;
     left: 24vw;
+  }
+}
+
+/*---Desktop-Media-Querie-Rules--- */
+/* For screen (width: 1280px and more, height: 720px (in mind)*/
+/* @media screen and (min-width: 1278px) {
+} */
+
+/* For screen (width: 1280px and more, height: 1024px*/
+@media screen and (min-width: 1278px) and (min-height: 1022px) {
+  .k * {
+    width: 14rem;
+  }
+
+  .k .diag-1 {
+    left: 48%;
+  }
+
+  .k .diag-2 {
+    bottom: -9%;
+    left: 44%;
+  }
+
+  .contents {
+    top: 20vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    min-height: 350px;
+  }
+
+  .card-contents h2 {
+    font-size: 3.4rem;
+  }
+
+  .hello {
+    margin-left: -8rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6.8rem;
+  }
+
+  .contents .links {
+    top: 38vh;
+    font-size: 3.4rem;
+  }
+
+  .quote {
+    font-size: 3rem;
+    bottom: 11vh;
+    left: 24vw;
+  }
+}
+
+/* For screen (width: 1440px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1438px) {
+  .k .vert-line {
+    left: 10%;
+  }
+
+  .k .diag-1 {
+    left: 48%;
+  }
+
+  .card-bg,
+  .card-contents {
+    min-height: 355px;
+  }
+
+  .card-contents h2 {
+    font-size: 3.4rem;
+  }
+
+  .hello {
+    margin-left: -8rem;
+  }
+
+  .card-contents h1 {
+    font-size: 7rem;
+  }
+
+  .contents .links {
+    top: 43vh;
+    font-size: 3.4rem;
+  }
+
+  .quote {
+    font-size: 3rem;
+    bottom: 11vh;
+  }
+}
+
+/* For screen (width: 1536px and more, height: 864px (in mind)*/
+@media screen and (min-width: 1534px) {
+  .k .vert-line {
+    left: 13%;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 52vw;
+  }
+
+  .hello {
+    margin-left: -10rem;
+  }
+
+  .contents .links {
+    top: 45vh;
+  }
+
+  .quote {
+    left: 22vw;
+  }
+}
+
+/* For screen (width: 1600px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1598px) {
+  .card-contents h1 {
+    margin: 0 13rem;
+  }
+}
+
+/* For screen (width: 1920px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 1918px) {
+  .k .vert-line {
+    left: 16%;
+  }
+
+  .contents {
+    top: 17vh;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 46vw;
+    min-height: 410px;
+  }
+
+  .card-contents h2 {
+    font-size: 3.6rem;
+  }
+
+  .hello {
+    margin-left: -12rem;
+  }
+
+  .hello span {
+    margin-left: 4.5rem;
+  }
+
+  .card-contents h1 {
+    font-size: 7.5rem;
+    margin: 2rem 12rem;
+  }
+
+  .contents .links {
+    font-size: 3.6rem;
+    top: 42vh;
+  }
+
+  .quote p {
+    margin-top: 1.5rem;
   }
 }
