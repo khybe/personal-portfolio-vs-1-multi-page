@@ -25,7 +25,7 @@
 .bio-bg,
 .bio {
   width: 100%;
-  height: 47vh;
+  height: 27rem;
   padding: 1.5rem;
   z-index: 2;
 }
@@ -94,7 +94,7 @@
 
   .bio-bg,
   .bio {
-    height: 48.5vh;
+    height: 31rem;
   }
 
   .bio {
@@ -125,7 +125,7 @@
 
   .bio-bg,
   .bio {
-    height: 47.5vh;
+    height: 36rem;
   }
 
   .bio {
@@ -159,7 +159,7 @@
 @media screen and (min-width: 358px) and (min-height: 778px) {
   .bio-bg,
   .bio {
-    height: 48vh;
+    height: 37.5rem;
   }
 
   .bio {
@@ -171,7 +171,7 @@
 @media screen and (min-width: 374px) {
   .bio-bg,
   .bio {
-    height: 46.5vh;
+    height: 31.2rem;
   }
 
   .bio {
@@ -205,7 +205,7 @@
 
   .bio-bg,
   .bio {
-    height: 46vh;
+    height: 37.5rem;
   }
 
   .bio {
@@ -229,7 +229,7 @@
 
   .bio-bg,
   .bio {
-    height: 48vh;
+    height: 35.5rem;
   }
 
   .bio {
@@ -294,7 +294,7 @@
 
   .bio-bg,
   .bio {
-    height: 45vh;
+    height: 36rem;
   }
 
   .bio {
@@ -338,7 +338,7 @@
 
   .bio-bg,
   .bio {
-    height: 48vh;
+    height: 46.5rem;
   }
 
   .bio {
@@ -381,7 +381,7 @@
 
   .bio-bg,
   .bio {
-    height: 44vh;
+    height: 44.5rem;
   }
 
   .bio {
@@ -427,7 +427,7 @@
 
   .bio-bg,
   .bio {
-    height: 41.5vh;
+    height: 25rem;
     left: 4vw;
   }
 
@@ -486,7 +486,7 @@
 
   .bio-bg,
   .bio {
-    height: 48.5vh;
+    height: 62rem;
     left: 12vw;
     padding: 2.5rem;
   }
@@ -542,7 +542,7 @@
 
   .bio-bg,
   .bio {
-    height: 48vh;
+    height: 52.5rem;
     padding: 2.5rem;
   }
 
@@ -602,7 +602,7 @@
 
   .bio-bg,
   .bio {
-    height: 37.2vh;
+    height: 22.5rem;
     padding: 1.5rem;
   }
 
@@ -649,7 +649,7 @@
 
   .bio-bg,
   .bio {
-    height: 37vh;
+    height: 28rem;
     left: 1.5vw;
   }
 
@@ -703,7 +703,7 @@
 
   .bio-bg,
   .bio {
-    height: 49vh;
+    height: 67rem;
     padding: 2.5rem;
     left: 5vw;
   }
@@ -746,14 +746,9 @@
   }
 }
 
-/* For screen (width: 1280px and more, height: 800px (in mind)*/
+/* For screen (width: 1280px and more, height: 720px (in mind)*/
 @media screen and (min-width: 1278px) {
-  .contents-ctr {
-    width: 65vw;
-  }
-
   .contents-ctr .title {
-    font-size: 3rem;
     top: 14vh;
   }
 
@@ -763,8 +758,34 @@
 
   .bio-bg,
   .bio {
-    height: 41vh;
-    left: 4.5vw;
+    height: 27.5rem;
+    left: 8vw;
+  }
+
+  .bio {
+    font-size: 2.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    margin: 0 2rem;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px*/
+@media screen and (min-width: 1278px) and (min-height: 798px) {
+  .contents-ctr {
+    width: 65vw;
+  }
+
+  .contents-ctr .title {
+    font-size: 3rem;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 33rem;
+    left: 6vw;
   }
 
   .bio {
@@ -784,15 +805,60 @@
   }
 }
 
-/* For screen (width: 1366px and more, height: 1024px (in mind)*/
-@media screen and (min-width: 1364px) {
+/* For screen (width: 1280px and more, height: 1024px*/
+@media screen and (min-width: 1278px) and (min-height: 1022px) {
   .contents-ctr .title {
-    font-size: 3.2rem;
-    top: 16vh;
+    top: 18vh;
   }
 
   .bio-ctr {
-    top: 24vh;
+    top: 26vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 39rem;
+  }
+
+  .bio {
+    font-size: 2.8rem;
+  }
+
+  .bio .languages {
+    top: 12%;
+  }
+
+  .bio .tools {
+    top: 20%;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 768px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .contents-ctr .title {
+    font-size: 3.2rem;
+    top: 15vh;
+  }
+
+  .bio-ctr {
+    top: 22vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 30rem;
+  }
+
+  .bio {
+    font-size: 2.6rem;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px*/
+@media screen and (min-width: 1364px) and (min-height: 1023px) {
+  .bio-bg,
+  .bio {
+    height: 42rem;
   }
 
   .bio {
@@ -806,11 +872,149 @@
 
   .languages span,
   .tools span {
-    margin: 0 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+/*---Desktop-Media-Querie-Rules--- */
+/* For screen (width: 1440px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1438px) {
+  .contents-ctr .title {
+    top: 16vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 38rem;
+  }
+
+  .bio {
+    font-size: 3rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 2rem;
+  }
+}
+
+/* For screen (width: 1529px and more, height: 700px (in mind)*/
+@media screen and (min-width: 1528px) and (min-height: 699px) {
+  .contents-ctr .title {
+    top: 13vh;
+  }
+
+  .bio-ctr {
+    top: 20vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 28rem;
+    left: 10vw;
+  }
+
+  .bio {
+    font-size: 2.7rem;
+  }
+
+  .languages h4,
+  .tools h4 {
     font-size: 2.2rem;
   }
 
+  .languages span,
+  .tools span {
+    font-size: 1.9rem;
+  }
+
+  .bio .languages {
+    top: 9%;
+  }
+
   .bio .tools {
-    top: 18%;
+    top: 16%;
+  }
+}
+
+/* For screen (width: 1536px and more, height: 864px (in mind)*/
+@media screen and (min-width: 1534px) {
+  .contents-ctr .title {
+    top: 16vh;
+  }
+
+  .bio-ctr {
+    top: 24vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 32.5rem;
+  }
+
+  .bio {
+    font-size: 2.8rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.4rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 2rem;
+  }
+
+  .bio .tools {
+    top: 20%;
+  }
+}
+
+/* For screen (width: 1600px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1598px) {
+  .bio-bg,
+  .bio {
+    height: 35rem;
+  }
+
+  .bio {
+    font-size: 3rem;
+  }
+}
+
+/* For screen (width: 1920px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 1918px) {
+  .contents-ctr .title {
+    font-size: 3.8rem;
+    top: 18vh;
+  }
+
+  .bio-ctr {
+    top: 26vh;
+  }
+
+  .bio-bg,
+  .bio {
+    height: 42rem;
+  }
+
+  .bio {
+    font-size: 3.6rem;
+  }
+
+  .languages h4,
+  .tools h4 {
+    font-size: 2.6rem;
+  }
+
+  .languages span,
+  .tools span {
+    font-size: 2.2rem;
   }
 }

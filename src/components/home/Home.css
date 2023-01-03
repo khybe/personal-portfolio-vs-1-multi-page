@@ -1057,6 +1057,43 @@
   }
 }
 
+/* For screen (width: 1477px and more, height: 700px (in mind)*/
+@media screen and (min-width: 1476px) {
+  .k .vert-line {
+    left: 16%;
+  }
+
+  .card-bg,
+  .card-contents {
+    width: 50vw;
+    min-height: 330px;
+  }
+
+  .contents {
+    top: 12vh;
+  }
+
+  .card-contents h2 {
+    font-size: 3.2rem;
+  }
+
+  .card-contents h1 {
+    font-size: 6rem;
+    margin: 0 10rem;
+  }
+
+  .contents .links {
+    top: 50vh;
+    font-size: 3.2rem;
+  }
+
+  .quote {
+    font-size: 2.6rem;
+    bottom: 12vh;
+    left: 18vw;
+  }
+}
+
 /* For screen (width: 1536px and more, height: 864px (in mind)*/
 @media screen and (min-width: 1534px) {
   .k .vert-line {
@@ -1124,6 +1161,11 @@
   .contents .links {
     font-size: 3.6rem;
     top: 42vh;
+  }
+
+  .quote {
+    font-size: 3rem;
+    bottom: 10vh;
   }
 
   .quote p {
