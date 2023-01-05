@@ -246,16 +246,63 @@
   }
 }
 
-/* For screen (width: 1280px and more, height: 800px (in mind)*/
+/* For screen (width: 1280px and more, height: 720px (in mind)*/
 @media screen and (min-width: 1278px) {
-  .vert-down .scroll-down {
-    font-size: 2rem;
+  .horiz-right {
+    margin-top: 31vh;
+  }
+
+  .projects {
+    height: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-/* For screen (width: 1366px and more, height: 1024px (in mind)*/
-@media screen and (min-width: 1364px) {
+/* For screen (width: 1280px and more, height: 800px*/
+@media screen and (min-width: 1278px) and (min-height: 798px) {
+  .horiz-right {
+    margin-top: 33vh;
+  }
+
+  .vert-down .scroll-down {
+    font-size: 1.8rem;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 1024px*/
+@media screen and (min-width: 1278px) and (min-height: 1022px) {
+  .horiz-right {
+    margin-top: 24vh;
+  }
+
   .projects {
-    height: 80%;
+    height: 70%;
+    overflow: hidden;
+  }
+
+  .vert-down .scroll-down {
+    display: none;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 768px (in mind)*/
+@media screen and (min-width: 1364px) {
+  .vert-down .scroll-down {
+    font-size: 1.8rem;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px*/
+@media screen and (min-width: 1364px) and (min-height: 1022px) {
+  .horiz-right {
+    margin-top: 28vh;
+  }
+}
+
+/*---Desktop-Media-Querie-Rules--- */
+/* For screen (width: 1920px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 1918px) {
+  .projects {
+    height: 75%;
   }
 }

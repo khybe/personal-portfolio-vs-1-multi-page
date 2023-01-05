@@ -157,10 +157,41 @@
   }
 }
 
-/* For screen (width: 1280px and more, height: 800px (in mind)*/
+/* For screen (width: 1280px and more, height: 720px (in mind)*/
 @media screen and (min-width: 1278px) {
   .project {
+    width: 85%;
+    margin-bottom: 4rem;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 1024px*/
+@media screen and (min-width: 1278px) and (min-height: 1022px) {
+  .project {
+    width: 90%;
+  }
+}
+
+/*---Desktop-Media-Querie-Rules--- */
+/* For screen (width: 1440px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1438px) {
+  .project img {
+    height: 130px;
+  }
+}
+
+/* For screen (width: 1536px and more, height: 864px (in mind)*/
+@media screen and (min-width: 1534px) and (min-height: 862px) {
+  .project {
     font-size: 2.2rem;
+  }
+}
+
+/* For screen (width: 1920px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 1918px) {
+  .project {
+    width: 85%;
+    font-size: 2.4rem;
   }
 
   .project img {

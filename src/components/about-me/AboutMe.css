@@ -943,7 +943,7 @@
 }
 
 /* For screen (width: 1536px and more, height: 864px (in mind)*/
-@media screen and (min-width: 1534px) {
+@media screen and (min-width: 1534px) and (min-height: 862px) {
   .contents-ctr .title {
     top: 16vh;
   }

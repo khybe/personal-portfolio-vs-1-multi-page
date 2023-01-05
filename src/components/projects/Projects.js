@@ -48,7 +48,7 @@ const Projects = () => {
         ))}
       </div>
       <h4 className="scroll-down">Scroll down for more</h4>
-      <AiOutlineDown size="2rem" className="scroll-down-icon" />
+      <AiOutlineDown size="2rem" className="scroll-down" />
     </div>
   );
 };

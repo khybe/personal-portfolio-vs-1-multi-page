@@ -1057,8 +1057,8 @@
   }
 }
 
-/* For screen (width: 1477px and more, height: 700px (in mind)*/
-@media screen and (min-width: 1476px) {
+/* For screen (width: 1535px and more, height: 700px (in mind)*/
+@media screen and (min-width: 1534px) {
   .k .vert-line {
     left: 16%;
   }
@@ -1089,15 +1089,19 @@
 
   .quote {
     font-size: 2.6rem;
-    bottom: 12vh;
+    bottom: 12.5vh;
     left: 18vw;
   }
 }
 
-/* For screen (width: 1536px and more, height: 864px (in mind)*/
-@media screen and (min-width: 1534px) {
+/* For screen (width: 1536px and more, height: 864px*/
+@media screen and (min-width: 1534px) and (min-height: 862px) {
   .k .vert-line {
     left: 13%;
+  }
+
+  .contents {
+    top: 16vh;
   }
 
   .card-bg,
