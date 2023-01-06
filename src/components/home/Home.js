@@ -23,7 +23,11 @@ const Home = () => {
           <h2 className="detail">&#60; A front-end developer &#62;</h2>
         </div>
         <div className="links">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/khaibar-saadat-6a3858208/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
             <span>Linkedin</span>
           </a>

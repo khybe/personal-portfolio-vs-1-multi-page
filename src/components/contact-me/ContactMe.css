@@ -768,7 +768,7 @@ form button:hover {
     background-size: 100% 3ch;
   }
 
-  .cm-vert-btm {
+  .cm-horiz-right {
     width: 35vw;
     font-size: 2rem;
     bottom: 20vh;
@@ -841,8 +841,33 @@ form button:hover {
   }
 }
 
-/* For screen (width: 1280px and more, height: 800px (in mind)*/
+/* For screen (width: 1280px and more, height: 720px (in mind)*/
 @media screen and (min-width: 1278px) {
+  .form {
+    right: 18vw;
+  }
+
+  .user-msg textarea {
+    line-height: 2.6ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.6ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.6ch;
+  }
+
+  form button {
+    font-size: 1.8rem;
+  }
+
+  .cm-horiz-right {
+    right: 7vw;
+  }
+}
+
+/* For screen (width: 1280px and more, height: 800px (in mind)*/
+@media screen and (min-width: 1279px) and (min-height: 799px) {
   .user-msg textarea {
     line-height: 2.6ch;
     background-image: linear-gradient(
@@ -856,16 +881,46 @@ form button:hover {
   .cm-vert-btm {
     font-size: 2.4rem;
   }
+
+  .userRespond {
+    padding-top: 28vh;
+  }
 }
 
-/* For screen (width: 1366px and more, height: 1024px (in mind)*/
-@media screen and (min-width: 1364px) {
+/* For screen (width: 1280px and more, height: 1024px*/
+@media screen and (min-width: 1279px) and (min-height: 1023px) {
   .contact-me .title {
-    font-size: 3.8rem;
+    top: 15vh;
   }
 
   .form {
     height: 46vh;
+  }
+
+  .user-msg textarea {
+    line-height: 2.7ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.7ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.7ch;
+  }
+
+  form button {
+    bottom: 6%;
+  }
+
+  .cm-horiz-right {
+    font-size: 2.2rem;
+    bottom: 26vh;
+  }
+}
+
+/* For screen (width: 1366px and more, height: 1024px (in mind)*/
+@media screen and (min-width: 1365px) and (min-height: 1023px) {
+  .contact-me .title {
+    font-size: 3.8rem;
   }
 
   .form label {
@@ -877,12 +932,8 @@ form button:hover {
     font-size: 2.4rem;
   }
 
-  .user-info input:first-of-type {
-    margin-top: 2.8rem;
-  }
-
   .user-msg {
-    margin: 3rem auto;
+    margin: 2.5rem auto;
   }
 
   .user-msg textarea {
@@ -896,6 +947,121 @@ form button:hover {
   }
 
   .cm-vert-btm {
-    right: 9vw;
+    right: 7vw;
+  }
+}
+
+/*---Desktop-Media-Querie-Rules--- */
+/* For screen (width: 1440px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1439px) {
+  .user-info input:first-of-type {
+    margin-top: 2.8rem;
+  }
+
+  .user-msg textarea {
+    line-height: 2.8ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.8ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.8ch;
+  }
+}
+
+/* For screen (width: 1529px and more, height: 700px (in mind)*/
+@media screen and (min-width: 1528px) and (min-height: 699px) {
+  .user-info input:first-of-type {
+    margin-top: 1.5rem;
+  }
+
+  .user-msg textarea {
+    line-height: 2.5ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.5ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.5ch;
+  }
+}
+
+/* For screen (width: 1536px and more, height: 864px (in mind)*/
+@media screen and (min-width: 1535px) and (min-height: 863px) {
+  .user-info input:first-of-type {
+    margin-top: 2.5rem;
+  }
+
+  form button {
+    bottom: 6%;
+  }
+}
+
+/* For screen (width: 1600px and more, height: 900px (in mind)*/
+@media screen and (min-width: 1599px) {
+  .contact-me .title {
+    font-size: 3.4rem;
+  }
+
+  .form label {
+    font-size: 2.8rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.4rem;
+  }
+
+  .user-msg {
+    margin: 2.5rem auto;
+  }
+
+  .user-msg textarea {
+    height: 80%;
+    line-height: 2.8ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.8ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 2.8ch;
+  }
+
+  form button {
+    bottom: 5%;
+  }
+}
+
+/* For screen (width: 1920px and more, height: 1080px (in mind)*/
+@media screen and (min-width: 1918px) {
+  .contact-me .title {
+    font-size: 3.6rem;
+  }
+
+  .form {
+    right: 15vw;
+  }
+
+  .form label {
+    font-size: 3rem;
+  }
+
+  .user-msg textarea {
+    line-height: 3ch;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(3ch - 1px),
+      #e7eff8 0px
+    );
+    background-size: 100% 3ch;
+  }
+
+  form button {
+    font-size: 2rem;
+  }
+
+  .cm-horiz-right {
+    font-size: 2.4rem;
+    right: 3vw;
   }
 }
